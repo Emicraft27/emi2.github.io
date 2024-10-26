@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color de la página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.5s ease;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            transition: color 0.5s ease;
+        }
+        button {
+            padding: 11px 25px;
+            font-size: 1.1rem;
+            background-color: #a4ea00;
+            color: rgb(12, 0, 0);
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #39b300;
+            transform: scale(1.10);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .menu-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #5be400;
+            color: #5C440F;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu-button:hover {
+            background-color: #48df03;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PRECIONA Y VE QUE PASA</h1>
+        <button id="colorButton">PRECIONAR</button>
+
+
+        <a href="../FINAL.html" class="menu-button">Regresar al Menú de Trabajos</a>
+    </div>
+
+    <script src="botom.js"></script>
+</body>
+</html>

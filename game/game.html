@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copo de Nieve - Juego</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            background-color: #5C440F;
+            color: #E4D500;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #3A2C0A;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #E4D500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        #lienzo { 
+            background-color: #1E5513;
+            border: 3px solid #E4D500;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        #restartButton {
+            display: none;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #E4D500;
+            color: #5C440F;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        #restartButton:hover {
+            background-color: #C4B300;
+        }
+        /* Estilo para el botón */
+        .menu-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #048115;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .menu-button:hover {
+            background-color: #00c220;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de la Serpiente</h1>
+        <canvas id="lienzo" width="600" height="400"></canvas>
+        <button id="restartButton">Vuelve a Intentarlo</button>
+    </div>
+
+    <!-- Botón de Regreso al Menú Principal -->
+    <a href="../FINAL.html" class="menu-button">Regresar al Menú de Trabajos</a>
+
+    <script src="./juego.js"></script>
+</body>
+</html>
+

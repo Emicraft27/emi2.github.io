@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Tareas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        /* Estilo para el botón */
+        .menu-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #199400;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .menu-button:hover {
+            background-color: #3aac0d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>App de Tareas</h1>
+            <form id="form">
+                <input type="text" name="" id="inputtarea">
+                <button>Agregar</button>
+            </form>
+        </div>
+        <div class="tareas"></div>
+    </div>
+
+    <!-- Botón de Regreso al Menú Principal -->
+    <a href="../FINAL.html" class="menu-button">Regresar al Menú de Trabajos</a>
+
+    <script src="./app.js"></script>
+</body>
+</html>

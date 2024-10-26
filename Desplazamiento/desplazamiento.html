@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Estilos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            background-color: rgba(105, 100, 100, 0.829);
+            color: rgb(0, 0, 0);
+        }
+        #caja {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(51, 218, 0);
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+        }
+        .menu-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #27a308;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu-button:hover {
+            background-color: #0d9720;
+        }
+    </style>
+</head>
+<body>
+    <h1>A TU ESTILO</h1>
+
+    <label for="ancho">Ancho:</label>
+    <input type="range" id="ancho" min="50" max="500" value="150">
+    <span id="anchoValor">150px</span>
+    <br>
+
+    <label for="alto">Alto:</label>
+    <input type="range" id="alto" min="50" max="500" value="150">
+    <span id="altoValor">150px</span>
+    <br>
+
+    <label for="radio">Radio del Borde:</label>
+    <input type="range" id="radio" min="0" max="100" value="10">
+    <span id="radioValor">10px</span>
+    <br>
+
+    <label for="sombraX">Sombra X:</label>
+    <input type="range" id="sombraX" min="0" max="50" value="5">
+    <span id="sombraXValor">5px</span>
+    <br>
+
+    <label for="sombraY">Sombra Y:</label>
+    <input type="range" id="sombraY" min="0" max="50" value="5">
+    <span id="sombraYValor">5px</span>
+    <br>
+
+    <label for="colorSombra">Color de la Sombra:</label>
+    <input type="color" id="colorSombra" value="#000000">
+    <span id="colorSombraValor">#000000</span>
+    <br><br>
+
+    <div id="caja"></div>
+
+    <!-- Botón de Regreso al Menú Principal -->
+    <a href="../FINAL.html" class="menu-button">Regresar al Menú de Trabajos</a>
+
+    <script src="./desplazamiento.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo con Canvas</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    #lienzo {
+        background-color: rgb(143, 136, 122);
+    }
+    /* Estilo para el botón */
+    .menu-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #0a8106;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+    .menu-button:hover {
+        background-color: #279705;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Mi dibujo con Canvas Y JavaScript</h1>
+        <canvas id="lienzo" width="600" height="400"></canvas>
+        <!-- Botón de Regreso al Menú Principal -->
+        <a href="../FINAL.html" class="menu-button">Regresar al Menú de Trabajos</a>
+    </div>
+    <script src="./dibujo.js"></script>
+</body>
+</html>
